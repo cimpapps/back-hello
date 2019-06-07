@@ -4,4 +4,4 @@ VOLUME /tmp
 #COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY . .
 RUN mvn clean install -DskipTests
-ENTRYPOINT ["java","-jar","target/back-hello-0.0.2-SNAPSHOT.jar"]
+ENTRYPOINT ["java","-jar","target/back-hello-0.0.1-SNAPSHOT.jar"]
